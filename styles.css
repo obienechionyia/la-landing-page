@@ -1,0 +1,283 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+.top-section {
+  background: url("/files/Image.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  width: auto;
+  height: 60%;
+}
+
+nav {
+  display: flex;
+  margin-left: 40%;
+  margin-top: 1.3rem;
+}
+
+nav a {
+  font-size: 12px;
+  font-family: "Lato";
+  color: rgb(254, 254, 255);
+  font-style: italic;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration-line: underline;
+  margin-left: 50px;
+}
+
+.logo {
+  margin-left: 20%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-2 {
+  display: flex;
+}
+
+.nav-2 nav {
+  margin-left: 28%;
+}
+
+#history-section {
+  background: url("/files/peak.png") no-repeat;
+  background-size: cover;
+  display: flex;
+  width: auto;
+  height: 73%;
+  flex-direction: column;
+  position: relative;
+}
+
+.history-text {
+  margin-left: 20%;
+  margin-top: 3rem;
+}
+
+.history-title img {
+  height: 6rem;
+}
+
+.history-paragraph {
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  text-align: left;
+  height: 63px;
+  margin-left: 4rem;
+  margin-right: 10%;
+}
+
+.slider-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(77, 94, 130, 0.9);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 3rem;
+  height: 4%;
+}
+
+#climb-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+#climb-section img {
+  height: 6rem;
+  margin-left: 23%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.climb-text {
+  font-size: 16px;
+  font-family: "Lato";
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+  text-align: left;
+  margin-top: 3rem;
+  margin-left: 1.5%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+}
+
+.divider {
+  background-color: #414f6b;
+  padding: 0.5rem;
+}
+
+.mountain-links {
+  margin-left: 20%;
+}
+
+.divider a {
+  text-decoration: none;
+  font-family: "Oswald";
+  text-decoration: underline;
+  font-size: 18px;
+  padding: 8px;
+}
+
+.mountain-1 {
+  background: url("/files/mountain-1.png") no-repeat bottom;
+  background-size: cover;
+  display: flex;
+  width: auto;
+  height: 45%;
+}
+
+.mountain-2 {
+  background: url("/files/mountain-2.png") no-repeat bottom;
+  background-size: cover;
+  display: flex;
+  width: auto;
+  height: 45%;
+}
+
+.activeButton {
+  background-color: #afb1b6;
+  color: rgba(77, 94, 130, 0.9);
+}
+
+.inactiveButton {
+  color: white;
+}
+
+footer {
+  background-color: #182848;
+  padding: 1rem;
+}
+
+.footer-container {
+  margin-left: 20%;
+}
+
+.footer-text {
+  margin-left: 30%;
+}
+
+.mountain-1 img {
+  height: 13rem;
+  margin-left: 21%;
+  margin-top: 5%;
+}
+
+.mountain-2 img {
+  height: 13rem;
+  margin-left: 21%;
+  margin-top: 5%;
+}
+
+.accordion {
+  display: none;
+}
+
+@media screen and (max-width: 770px) {
+  nav {
+    margin-left: 15%;
+  }
+  .logo {
+    margin-left: 5%;
+  }
+  .nav-2 nav {
+    margin-left: 5%;
+  }
+  .carousel-bg {
+    display: none;
+  }
+  .divider {
+    display: none;
+  }
+  #mountain {
+    display: none;
+  }
+  .accordion {
+    display: block;
+  }
+  .history-paragraph {
+    font-size: 12px;
+  }
+  .climb-text {
+    font-size: 12px;
+  }
+  .accordion-body .mt1 {
+    background: url(files/mountain-1.png);
+    width: 100vh;
+    height: auto;
+  }
+  .accordion-body .mt2 {
+    background: url(files/mountain-2.png);
+    width: 100vh;
+    height: auto;
+  }
+  .footer-text {
+    display: none;
+  }
+  .footer-logo {
+    margin-left: 2.5rem;
+  }
+}
+
+.mountain-links a {
+  cursor: pointer;
+}
+
+.grow {
+  transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+  transform: scale(1.03);
+}
+
+.carousel-bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  background-color: rgba(65, 79, 107, 0.85);
+  bottom: 0;
+  padding: 3rem;
+}
+
+.carousel-item a {
+  cursor: default;
+}
+
+.thumb-container {
+  position: relative;
+  width: 100%;
+}
+
+.row img {
+  height: 80%;
+  width: 100%;
+}
+
+.blog .carousel-indicators {
+  left: 0;
+  top: auto;
+  bottom: -3rem;
+}
+
+.blog .carousel-indicators:hover {
+  cursor: pointer;
+}
+
+.blog .carousel-indicators li {
+  background: rgba(231, 231, 231, 0.3);
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+}
+
+.blog .carousel-indicators .active {
+  background: white;
+}
